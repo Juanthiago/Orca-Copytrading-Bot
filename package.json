@@ -1,0 +1,39 @@
+{
+  "name": "orca-copytrading-bot",
+  "version": "0.1.0",
+  "description": "Solana Orca CLMM copytrading bot",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "tsx src/index.ts",
+    "gather": "tsx src/index.ts --gather",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": [
+    "solana",
+    "orca",
+    "copytrading",
+    "whirlpool",
+    "bot"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@orca-so/common-sdk": "^0.6.4",
+    "@orca-so/whirlpools-sdk": "^0.13.5",
+    "@solana/spl-token": "^0.4.8",
+    "@solana/web3.js": "^1.98.0",
+    "axios": "^1.8.4",
+    "bs58": "^6.0.0",
+    "decimal.js": "^10.4.3",
+    "dotenv": "^16.4.5",
+    "pino": "^9.6.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
